@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trò Chơi Hoa Quả</title>
+    <title>Happy Women Day</title>
     <link rel="stylesheet" href="style.css">
     <style>
         * {
@@ -35,13 +35,13 @@
             overflow: hidden;
             max-width: 100%;
             padding: 10px;
-            border: 2px solid #444;
+            border: 2px solid #d40bd4;
             border-radius: 10px;
             background-color: white;
         }
         .fruit {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,7 +55,7 @@
             margin-top: 20px;
             padding: 12px 25px;
             font-size: 18px;
-            background: #4CAF50;
+            background: #d40bd4;
             color: white;
             border: none;
             cursor: pointer;
@@ -83,7 +83,7 @@
             padding: 20px;
             border-radius: 10px;
             width: 80%;
-            max-width: 300px;
+            max-width: 350px;
             text-align: center;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
             animation: scaleUp 0.5s ease-in-out;
@@ -145,6 +145,26 @@
 <body>
     <div class="flowers"></div>
     <h1>💖 Quà Ngày Quốc Tế Phụ Nữ 8/3 💖</h1>
+    <div class="content-container"> 
+        <p>
+            Anh cũng có vài lời tâm tư nói với em!!!! <br> <br>
+
+            Chúng ta yêu nhau cũng gần nửa năm, nó cũng không quá dài những anh cứ ngỡ
+            là đã rất lâu rồi.<br> 
+            Dù ít những anh muốn em là người cuối cùng để anh yêu.<br>
+            Và thực sự cái khoảng thời gian anh với em xa nhau cũng là thử thách cho hai đứa.<br>
+            Cho dù đã có lúc cãi nhẹ nhẹ những đó là cách chúng ta hiểu nhau hơn. <br>
+            Những khi cãi nhau anh có nói gì làm em buồn, thì cho anh xin lỗi nhé! <br> <br>
+
+            Văn anh cũng đã hết, những lòng dạ anh thì không bao giờ cạn đối với em.<br>
+            Anh chỉ muốn nói với em là : <b>Anh yêu em nhiều lắm!!!!🥰🥰🥰</b><br> <br>
+
+            <b> P/s: </b> Nhanh về với anh nhé!!! (Code này được anh viết khi nói chuyện với em đó 😂😂😂) <br><br>
+
+            <b>À còn nữa em hãy thử vận may <b>(Ấn vào chữ: Yêu em)</b>, xem em được quà gì, rồi chụp màn hình lại cho anh nhé👇👇👇</b>
+        </p>
+
+    </div>
     <div class="game-container">
         <div class="fruit-container" id="fruitContainer">
             <div class="fruit"><img src="/image/capypara.jpeg" alt="Capypara"></div>
@@ -152,13 +172,13 @@
             <div class="fruit"><img src="/image/threebaby.webp" alt="Baby Three"></div>
             <div class="fruit"><img src="/image/suaruamat.png" alt="Sữa Rửa Mặt"></div>
         </div>
-        <button class="btn" onclick="startGame()">Quay</button>
+        <button class="btn" onclick="startGame()">Yêu em</button>
     </div>
 
     <!-- Modal Hiển Thị Kết Quả -->
     <div id="resultModal" class="modal">
         <div class="modal-content">
-            <p id="resultText">🎉 Kết quả:</p>
+            <p id="resultText">🎉 Quà của em:</p>
             <img id="resultImage" style="width:100px; height:100px;">
         </div>
     </div>
@@ -195,7 +215,7 @@
                 let finalFruit = fruits[index];
 
                 // Thêm hiệu ứng rung và phóng to
-                resultText.innerHTML = `🎉 Kết quả: ${finalFruit.name}`;
+                resultText.innerHTML = `🎉 Quà của em: ${finalFruit.name}`;
                 resultImage.src = finalFruit.image;
                 resultImage.style.animation = "scaleUp 0.5s ease-in-out, shake 0.5s ease-in-out";
 
